@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main()
 {
@@ -19,14 +20,12 @@ int main()
       {
         arr1 += a[i][j];
       }
-      if (i <)
+      if (i + j == n - 1)
       {
-        /* code */
+        arr2 += a[i][j];
       }
-
-      arr2 += a[0][2] + a[1][1] + a[2][0];
     }
   }
-  // sum = arr1 - arr2;
-  // cout << sum;
+  sum = arr1 - arr2;
+  cout << abs(sum);
 }
